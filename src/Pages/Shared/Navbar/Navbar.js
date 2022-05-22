@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
             <li><Link to="/blog">Blog</Link></li>
             </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <Link to="/" className="btn btn-ghost normal-case text-xl">Manufacturer</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0">
@@ -23,7 +24,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="navbar-end">
-            <a className="btn">Get started</a>
+        <PrimaryButton></PrimaryButton>
         </div>
         </div>
     );
