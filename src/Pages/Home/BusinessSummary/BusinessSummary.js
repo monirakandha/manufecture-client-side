@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BsFillEmojiSmileFill } from "react-icons/bs";
 const BusinessSummary = () => {
     return (
         <div className='mt-10 mb-10'>
@@ -12,7 +12,8 @@ const BusinessSummary = () => {
                 <div>
                 <div className="stats shadow bg-slate-900">
                 <div className="stat">
-                    <div className="stat-value text-primary">7,400</div>
+              
+                    <div className="stat-value text-primary text-center">  <BsFillEmojiSmileFill></BsFillEmojiSmileFill> 7,400</div>
                     <div className="stat-title text-white font-bold">Happy Customer</div>
                 </div>
                 </div>

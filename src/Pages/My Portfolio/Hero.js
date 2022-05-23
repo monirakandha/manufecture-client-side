@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src={HeroBg} className="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <h1 className="text-9xl font-bold text-left">Development</h1>
+            <h1 className="text-2xl md:text-6xl lg:text-9xl font-bold text-left">Development</h1>
             <p className="py-6 text-left text-2xl">
             There are many variations of passages but the majority have suffered alteration.There are many variations of passages but the majority have suffered alteration.
             </p>

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from '../../../firebase.init';
 
 const Navbar = () => {
+    const [user, loading, error] = useAuthState(auth);
     return (
         <div className="navbar bg-base-100 p-5">
         <div className="navbar-start">
@@ -22,6 +25,15 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/myportfolio">My Portfolio</Link></li>
+            <li>
+        {user ? (
+          <button class="btn btn-active btn-ghost" onClick={logout}>
+            Sign Out
+          </button>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
+      </li>
             </ul>
         </div>
         </div>

@@ -9,7 +9,7 @@ const OurReview = () => {
             <h2 className='text-2xl mt-10'>We are provide original with affordable price tools that will help anyone for grow business and work</h2>
             <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 mt-10 gap-4 mb-20">
                 {/* first  */}
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
                 <img src={One} alt="Shoes" class="rounded-xl" />
             </figure>
@@ -28,7 +28,7 @@ const OurReview = () => {
             </div>
             </div>
             {/* second  */}
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
                 <img src={Two} alt="Shoes" class="rounded-xl" />
             </figure>
@@ -47,7 +47,7 @@ const OurReview = () => {
             </div>
             </div>
             {/* third  */}
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
                 <img src={Three} alt="Shoes" class="rounded-xl" />
             </figure>
