@@ -7,8 +7,8 @@ import Home from './Pages/Home/Home/Home';
 import Blog from './Pages/Blog/Blog';
 import MyPortfolio from './Pages/My Portfolio/MyPortfolio';
 import NotFound from './Pages/Shared/NotFound/NotFound';
-import Login from './Pages/Login/Login';
-import Singnup from './Pages/Singnup/Singnup';
+import Login from './Pages/RegisterSystem/Login/Login';
+import Singnup from './Pages/RegisterSystem/Singnup/Singnup';
 
 function App() {
   return (
