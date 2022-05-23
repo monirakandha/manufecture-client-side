@@ -24,9 +24,6 @@ const Navbar = () => {
             <li><Link to="/myportfolio">My Portfolio</Link></li>
             </ul>
         </div>
-        <div className="navbar-end">
-        <PrimaryButton></PrimaryButton>
-        </div>
         </div>
     );
 };

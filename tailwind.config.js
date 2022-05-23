@@ -4,7 +4,7 @@ module.exports = {
     themes: [
       {
         docotrtheme: {
-          primary: "#0FCFEC",
+          primary: "#00ce87",
           secondary: "#19D3AE",
           accent: "#3A4256",
           neutral: "#3d4451",
