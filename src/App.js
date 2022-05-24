@@ -9,6 +9,8 @@ import MyPortfolio from './Pages/My Portfolio/MyPortfolio';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/RegisterSystem/Login/Login';
 import Singnup from './Pages/RegisterSystem/Singnup/Singnup';
+import SingleProductDetails from './Pages/SingleProductDetails/SingleProductDetails';
+import RequireAuth from './Pages/RegisterSystem/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/home' element={<Home></Home>}></Route>
+      <Route path='/tool/:id' element={<RequireAuth>
+        <SingleProductDetails></SingleProductDetails>
+          </RequireAuth>}></Route>
       <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
       <Route path='/login' element={<Login></Login>}></Route>
