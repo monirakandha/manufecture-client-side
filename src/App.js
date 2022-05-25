@@ -12,7 +12,11 @@ import Singnup from './Pages/RegisterSystem/Singnup/Singnup';
 import SingleProductDetails from './Pages/SingleProductDetails/SingleProductDetails';
 import RequireAuth from './Pages/RegisterSystem/RequireAuth/RequireAuth';
 import Purchase from './Pages/Purchase/Purchase';
-import DashBoard from './Pages/DashBoard/DashBoard';
+import Dashboard from './Pages/DashBoard/DashBoard';
+import MyOrders from './Pages/DashBoard/MyOrders';
+import MyProfile from './Pages/DashBoard/MyProfile';
+import MyReview from './Pages/DashBoard/MyReview';
+
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
       <Route path='/Purchase' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
       <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
-      <Route path="dashboard" element={<RequireAuth><DashBoard /></RequireAuth>} >
+      <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
+          {/* <Route index element={<MyOrders></MyOrders>}></Route> */}
+          <Route path="myorder" element={<MyOrders></MyOrders>}></Route>
+          <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="myreview" element={<MyReview></MyReview>}></Route>
         </Route>
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<Singnup></Singnup>}></Route>
