@@ -2,9 +2,10 @@ import React from 'react';
 
 const Purchase = () => {
     return (
-        <div>
-            <h2>THis is Purchase Page</h2>
-        </div>
+            <div class="grid grid-cols-6 gap-4">
+                <div>test</div>
+                <div>test</div>
+            </div>
     );
 };
 

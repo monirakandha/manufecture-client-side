@@ -5,7 +5,7 @@ const ProductDetails = ({tool}) => {
   const {_id, name, img, description , price , quantity} = tool;
   const navigate = useNavigate();
   const navigateToSingleToolsDetails = id => {
-    navigate(`/tool/${id}`);
+  navigate(`/tool/${id}`);
   }
   console.log(tool);
   return (

@@ -121,23 +121,28 @@ const SingleProductDetails = () => {
     //     </div>
     //   </div>
     // </div>
-    <div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="card bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src={img} alt="Shoes" class="rounded-xl" />
+        </figure>
 
-<div class="card bg-base-100 shadow-xl">
-  <figure class="px-10 pt-10">
-    <img src={img} alt="Shoes" class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title">{name}</h2>
-    <p className="text-2xl">{description}</p>
-    <p className="text-2xl font-bold">PRICE: $ {price}</p>
-    <p className="text-2xl font-bold"> QUANTITY : {quantity}</p>
-    <div class="card-actions">
-      <button class="btn btn-primary text-white">Buy Now</button>
+      </div>
+
+  <div>
+    <div class="card-body text-left mt-20">
+          <h2 class="card-title">{name}</h2>
+          <p className="text-2xl">{description}</p>
+          <p className="text-2xl font-bold">PRICE: $ {price}</p>
+          <p className="text-2xl font-bold"> QUANTITY : {quantity}</p>
+          <div class="card-actions">
+            <button class="btn btn-primary text-white">Buy Now</button>
+          </div>
+        </div>
     </div>
-  </div>
 </div>
-    </div>
+
+    
   );
 };
 
