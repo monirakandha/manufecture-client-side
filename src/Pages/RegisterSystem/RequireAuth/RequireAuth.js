@@ -2,7 +2,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import LoadingCompoment from '../../Shared/LoadingCompoment/LoadingCompoment';
+import Loading from '../../Shared/Loading';
 
 
 const RequireAuth = ({children}) => {
@@ -10,7 +10,7 @@ const RequireAuth = ({children}) => {
     const location = useLocation();
 
     if(loading){
-        return <LoadingCompoment></LoadingCompoment>
+        return <Loading></Loading>
     }
 
     if(!user){

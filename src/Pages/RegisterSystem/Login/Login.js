@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useForm } from "react-hook-form";
-import LoadingCompoment from '../../Shared/LoadingCompoment/LoadingCompoment';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useToken from '../../../hooks/useToken';
+import Loading from '../../Shared/Loading';
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -29,7 +29,7 @@ const Login = () => {
     }, [token, from, navigate])
 
     if (loading || gLoading) {
-        return <LoadingCompoment></LoadingCompoment>
+        return <Loading></Loading>
     }
 
     if(error || gError){

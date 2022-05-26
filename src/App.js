@@ -36,7 +36,7 @@ function App() {
           <Route path="myorder" element={<MyOrders></MyOrders>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
           <Route path="myreview" element={<MyReview></MyReview>}></Route>
-          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
         </Route>
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<Singnup></Singnup>}></Route>
