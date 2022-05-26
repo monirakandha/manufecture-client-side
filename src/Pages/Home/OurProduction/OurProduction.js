@@ -5,7 +5,7 @@ const OurProduction = ({ tool }) => {
   const [tools, setTools] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("https://obscure-lake-52950.herokuapp.com/tools")
+    fetch("http://localhost:5000/tools")
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);
