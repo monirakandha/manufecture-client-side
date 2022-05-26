@@ -4,7 +4,7 @@ const useSingleToolsDetails = (id) => {
   const [tool, setTool] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tools/${id}`)
+    fetch(`https://obscure-lake-52950.herokuapp.com/tools/${id}`)
       .then((res) => res.json())
       .then((data) => setTool(data));
   }, [id]);

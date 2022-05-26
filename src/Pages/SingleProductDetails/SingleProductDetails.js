@@ -2,17 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import useSingleToolsDetails from "../../hooks/useSingleToolsDetails";
-
+import { useNavigate } from 'react-router-dom';
 const SingleProductDetails = () => {
   const { id } = useParams();
+  
   const [tool, setTool] = useSingleToolsDetails(id);
+  const navigate = useNavigate();
+  const navigateToPurchase = id => {
+    navigate("/purchase");
+    }
   console.log(tool._id);
   const updateQuantity = (event) => {
     event.preventDefault();
     const quantity =
       parseFloat(event.target.restock.value) + parseFloat(tool.quantity);
 
-    const url = `http://localhost:5000/tools/${id}`;
+    const url = `https://obscure-lake-52950.herokuapp.com/tools/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -136,7 +141,7 @@ const SingleProductDetails = () => {
           <p className="text-2xl font-bold">PRICE: $ {price}</p>
           <p className="text-2xl font-bold"> QUANTITY : {quantity}</p>
           <div class="card-actions">
-            <button class="btn btn-primary text-white">Buy Now</button>
+            <button class="btn btn-primary text-white" onClick={() => navigateToPurchase ()}>Buy Now</button>
           </div>
         </div>
     </div>
