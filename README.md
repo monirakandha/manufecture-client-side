@@ -1,10 +1,10 @@
-# BOOK WAREHOUSE SYSTEM
+# Tools Manufecture website
 
-It is an book warehouse system website. Build with react.  It's a dynamic Resposive website. It has awesome Designed responsive pages.
-It contains Home, , Checkout, About, Contact, Blogs, Login & SignUp pages.Where user can login and upload own books in system then if user want to change quantity delete the book. In This system user can easily login with there gmail account.
+It is a Tools Manufecture website website. Build with react.  It's a dynamic Resposive website. It has awesome Designed responsive pages.
+It contains Home, , Checkout, About, Contact, Blogs, Login & SignUp pages.Where user can purchase tools in system then if user want to change quantity delete the tools. Make admin set rules.In This system user can easily login with there gmail account.
 
 # Live Site link: 
-Click here [BOOK WAREHOUSE SYSTEM](https://book-service-management-system.web.app/)
+Click here [Tools Manufecture website](https://manufacture-portal.web.app/)
 
 ## Features
 
